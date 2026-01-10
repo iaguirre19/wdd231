@@ -5,88 +5,90 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="Iran Ricardo Aguirre Castaneda is a Front-End Developer from Colombia."
+            content="WDD231 course home page and resources for assignments."
         />
-        <title>Iran Ricardo Aguirre Castaneda</title>
-        <link rel="stylesheet" href="styles/normalize.css" />
-        <link rel="stylesheet" href="styles/header.css" />
-        <link rel="stylesheet" href="styles/main.css" />
-        <link rel="stylesheet" href="styles/basics.css" />
-        <link rel="stylesheet" href="styles/footer.css" />
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-            rel="stylesheet"
-        />
+        <meta name="author" content="Iran Aguirre" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+        <title>WDD231 | Home</title>
     </head>
     <body>
-        <header class="header">
-            <div class="header-content">
-                <img src="images/profile.jpeg" alt="logo" />
-                <h1>Iran Ricardo Aguirre</h1>
-                <i class="fas fa-bars" id="menu"></i>
-            </div>
-            <nav>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Chamber</a></li>
-                    <li><a href="#">GitHub Profile</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="section-wrapper">
-                <section class="section">
-                    <h2 class="section-title">Course Work</h2>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </section>
-
-                <section class="section">
-                    <h2 class="section-title">Brasilia, Brazil</h2>
-                    <div class="image-container">
-                        <img
-                            src="images/brasilia-img.jpg"
-                            alt="Brasilia, Brazil"
-                        />
-                        <p class="image-caption">Brasilia, Brazil</p>
-                    </div>
-                </section>
-            </div>
-
-            <section class="section courses-section">
-                <h2 class="section-title">
-                    Web and Computer Programming Certificate
-                </h2>
-                <div class="filter-buttons">
-                    <button id="filter-all">All</button>
-                    <button id="filter-wdd">WDD</button>
-                    <button id="filter-cse">CSE</button>
+        <header>
+            <div class="header-inner">
+                <div class="brand">
+                    <img src="images/logo.svg" alt="WDD231 logo" />
+                    <span>Iran Aguirre</span>
                 </div>
-                <div id="course-list"></div>
-                <p id="total-credits"></p>
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="siteNav"
+                >
+                    <span aria-hidden="true">&#9776;</span>
+                </button>
+                <nav id="siteNav" class="site-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="chamber/index.html">Chamber Project</a></li>
+                        <li><a href="final/index.html">Final Project</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1>Home</h1>
+
+            <section id="aboutMe">
+                <div class="cards-container">
+                    <div class="cards-content about-card">
+                        <h2>About Me</h2>
+                        <p>
+                            Hello! My name is Iran Aguirre, and I am currently
+                            enrolled in the WDD231 course. I have a passion for
+                            web development and look forward to enhancing my
+                            skills through this program. I am excited to learn
+                            new technologies and apply them in real-world
+                            projects. I currently live in Mexico and have been
+                            married for the past 6 years. I have a beautiful
+                            child named Liam and two Belgian Malinois dogs.
+                        </p>
+                    </div>
+                    <div class="cards-content photo-card">
+                        <h2>Student Photo</h2>
+                        <figure>
+                            <img
+                                src="images/profile.jpeg"
+                                alt="Photo of Iran Aguirre"
+                            />
+                            <figcaption>Iran Aguirre</figcaption>
+                        </figure>
+                    </div>
+                    <div class="cards-content courses-card">
+                        <h2>Web Certificate Course</h2>
+                        <p class="muted">
+                            Filter by subject and see which courses are already
+                            completed.
+                        </p>
+                        <div id="courseButtons"></div>
+                        <div id="courseRenders"></div>
+                    </div>
+                </div>
             </section>
         </main>
 
-        <footer class="footer">
-            <p>
-                ©<span id="currentyear"></span> Iran Ricardo Aguirre
-                <span id="location">Brasilia, Brazil</span>
-            </p>
-            <p id="lastModified"></p>
+        <footer>
+            <p id="copyright"></p>
+            <p id="lastModification"></p>
         </footer>
-
-        <script src="scripts/hamburguerMenu.js"></script>
-        <script src="scripts/courseList.js"></script>
-        <script src="scripts/footer.js"></script>
     </body>
 </html>
