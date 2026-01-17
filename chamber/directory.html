@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Business directory for the Curitiba Chamber of Commerce."
+        />
+        <meta name="author" content="Iran Aguirre" />
+        <meta property="og:title" content="Directory | Curitiba Chamber" />
+        <meta
+            property="og:description"
+            content="Explore members, contacts, and benefits from the Curitiba Chamber of Commerce."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://iaguirre19.github.io/wdd231/chamber/directory.html"
+        />
+        <meta
+            property="og:image"
+            content="https://iaguirre19.github.io/wdd231/chamber/images/curitiba-banner.webp"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/chamber/styles/normalize.css" />
+        <link rel="stylesheet" href="/chamber/styles/small.css" />
+        <link rel="stylesheet" href="/chamber/styles/larger.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="icon" type="image/png" href="/chamber/images/favicon.png" />
+        <title>Directory | Curitiba Chamber</title>
+        <script
+            type="module"
+            src="/chamber/scripts/directory.js"
+            defer
+        ></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-inner">
+                <div class="brand">
+                    <img
+                        src="/chamber/images/chamber-logo.png"
+                        alt="Curitiba Chamber logo"
+                    />
+                    <span>Curitiba Chamber of Commerce</span>
+                </div>
+                <nav id="siteNav" class="site-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="/chamber/index.html">Home</a></li>
+                        <li><a href="/chamber/discover.html">Discover</a></li>
+                        <li><a href="/chamber/directory.html" aria-current="page">Directory</a></li>
+                        <li><a href="/chamber/join.html">Join</a></li>
+                        <li><a href="/chamber/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <figure>
+                    <img
+                        src="/chamber/images/curitiba-banner.webp"
+                        alt="Curitiba city skyline at night"
+                    />
+                </figure>
+            </section>
+            <section>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Events</h3>
+                            <p class="card-subtitle">Upcoming Chamber Events</p>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Stay informed about networking events,
+                                workshops, and business seminars organized by
+                                the Curitiba Chamber of Commerce.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="card-link">View all events →</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Current Weather</h3>
+                            <p class="card-subtitle">Curitiba, Brazil</p>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Check the current weather conditions in Curitiba
+                                to plan your business activities and events.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="card-link">Full forecast →</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Weather Forecast</h3>
+                            <p class="card-subtitle">3-Day Outlook</p>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Plan ahead with our detailed weather forecast
+                                for the next three days in Curitiba.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="card-link">Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="directory-container">
+                <div class="directory-header-btns">
+                    <h3>Business Directory</h3>
+                    <div class="view-buttons-content">
+                        <button id="grid">
+                            <i class="fa-solid fa-grip" aria-hidden="true"></i>
+                            <span>Grid</span>
+                        </button>
+                        <button id="list">
+                            <i class="fa-solid fa-list" aria-hidden="true"></i>
+                            <span>List</span>
+                        </button>
+                    </div>
+                </div>
+                <article id="renderCards" class="grid">
+                    <section>
+                        <div id="cardsContainer" class="cards-container">
+                            <!-- Business cards will be rendered here -->
+                        </div>
+                    </section>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-contact">
+                <p><strong>Contact:</strong> info@camaracuritiba.br | +55 (41) 3021-7788</p>
+                <p>Rua Marechal Deodoro 630, Curitiba, PR</p>
+            </div>
+            <div class="footer-meta">
+                <p id="copyright"></p>
+                <p id="lastModification"></p>
+                <p>Development: Iran Aguirre · WDD 231</p>
+            </div>
+        </footer>
+        <script type="module">
+            import { setDates } from "/chamber/scripts/bases.js";
+            setDates();
+        </script>
+    </body>
+</html>

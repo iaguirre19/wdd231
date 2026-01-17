@@ -1,0 +1,235 @@
+:root {
+    --stroke: #e5e5e5;
+}
+
+.directory-container {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid var(--stroke);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.directory-header-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.directory-header-btns h3 {
+    margin: 0;
+    font-size: 1.35rem;
+    letter-spacing: -0.01em;
+}
+
+.view-buttons-content {
+    display: inline-flex;
+    gap: 0.25rem;
+    padding: 0.3rem;
+    background: #f3f3f3;
+    border-radius: 8px;
+    border: 1px solid var(--stroke);
+}
+
+.view-buttons-content button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    background: #ffffff;
+    color: var(--color-text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.view-buttons-content button i {
+    font-size: 0.95rem;
+}
+
+.view-buttons-content button.active {
+    background: #1d1d1f;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+}
+
+.view-buttons-content button:hover:not(.active) {
+    background: #f7f7f7;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0.75rem;
+    transition: var(--transition-smooth);
+}
+
+.cards-container.view-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.business-card {
+    background: #ffffff;
+    border: 1px solid var(--stroke);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.business-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.card-top h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.industry {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+}
+
+.membership-pill {
+    padding: 0.25rem 0.65rem;
+    border-radius: 6px;
+    background: #f1f1f1;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text);
+    border: 1px solid var(--stroke);
+}
+
+.card-body {
+    display: grid;
+    gap: 0.35rem;
+}
+
+.info-line {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+}
+
+.info-line i {
+    color: #1d1d1f;
+    font-size: 0.9rem;
+}
+
+.info-line a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.info-line a:hover {
+    text-decoration: underline;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    border-top: 1px solid var(--stroke);
+    padding-top: 0.6rem;
+}
+
+.hours {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--color-text-secondary);
+    font-size: 0.88rem;
+}
+
+.hours i {
+    color: #1d1d1f;
+}
+
+.cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #0066cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cta-link:hover {
+    text-decoration: underline;
+}
+
+.business-card.is-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.business-card.is-list .card-body {
+    flex: 1;
+}
+
+.business-card.is-list .card-footer {
+    flex: 0 0 auto;
+}
+
+@media (max-width: 900px) {
+    .business-card.is-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .business-card.is-list .card-top {
+        flex: 1;
+        width: 100%;
+        padding-right: 0;
+        border-right: none;
+        padding-bottom: 0.35rem;
+        border-bottom: 1px solid var(--stroke);
+    }
+
+    .business-card.is-list .card-footer {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid var(--stroke);
+        padding-top: 0.75rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .view-buttons-content {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .business-card {
+        padding: 1rem 1.1rem;
+    }
+}

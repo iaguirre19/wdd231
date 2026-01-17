@@ -1,0 +1,96 @@
+{
+    "businesses": [
+        {
+            "name": "Curitiba Tech Solutions Ltda.",
+            "address": "Rua Marechal Deodoro 630, Centro, Curitiba, PR, 80010-010, Brazil",
+            "phone": "+55 (41) 3021-7788",
+            "website": "https://www.curitibatechsolutions.com.br",
+            "image": "curitiba-tech-solutions.svg",
+            "membershipLevel": 3,
+            "otherInformation": {
+                "industry": "Software & IT Services",
+                "shortDescription": "Custom web apps, integrations, and managed cloud services for SMBs.",
+                "email": "contato@curitibatechsolutions.com.br",
+                "businessHours": "Mon-Fri 09:00-18:00"
+            }
+        },
+        {
+            "name": "Panificadora Pinheirais",
+            "address": "Av. Sete de Setembro 4210, Batel, Curitiba, PR, 80250-210, Brazil",
+            "phone": "+55 (41) 3090-1144",
+            "website": "https://www.panificadorapinheirais.com.br",
+            "image": "panificadora-pinheirais.svg",
+            "membershipLevel": 2,
+            "otherInformation": {
+                "industry": "Food & Beverage",
+                "shortDescription": "Artisan breads, pastries, and daily coffee service.",
+                "businessHours": "Daily 07:00-21:00"
+            }
+        },
+        {
+            "name": "EcoMobi Curitiba",
+            "address": "Rua Itupava 1111, Alto da XV, Curitiba, PR, 80040-010, Brazil",
+            "phone": "+55 (41) 99122-3300",
+            "website": "https://www.ecomobicuritiba.com.br",
+            "image": "ecomobi-curitiba.svg",
+            "membershipLevel": 1,
+            "otherInformation": {
+                "industry": "Urban Mobility",
+                "shortDescription": "E-bike rentals and guided city routes focused on sustainable tourism.",
+                "businessHours": "Tue-Sun 10:00-19:00"
+            }
+        },
+        {
+            "name": "Clínica Vida Batel",
+            "address": "Alameda Dr. Carlos de Carvalho 1500, Batel, Curitiba, PR, 80420-180, Brazil",
+            "phone": "+55 (41) 3123-9090",
+            "website": "https://www.clinicavidabatel.com.br",
+            "image": "clinica-vida-batel.svg",
+            "membershipLevel": 3,
+            "otherInformation": {
+                "industry": "Healthcare",
+                "shortDescription": "Primary care and specialty consultations with online scheduling.",
+                "businessHours": "Mon-Sat 08:00-20:00"
+            }
+        },
+        {
+            "name": "Curitiba Casa & Design",
+            "address": "Av. Presidente Kennedy 2450, Rebouças, Curitiba, PR, 80220-201, Brazil",
+            "phone": "+55 (41) 3205-4455",
+            "website": "https://www.curitibacasadesign.com.br",
+            "image": "curitiba-casa-design.svg",
+            "membershipLevel": 2,
+            "otherInformation": {
+                "industry": "Home & Living",
+                "shortDescription": "Interior design studio and furniture showroom.",
+                "businessHours": "Mon-Fri 10:00-19:00, Sat 10:00-14:00"
+            }
+        },
+        {
+            "name": "Paraná Legal & Contábil",
+            "address": "Rua XV de Novembro 500, Centro, Curitiba, PR, 80020-310, Brazil",
+            "phone": "+55 (41) 3044-2201",
+            "website": "https://www.paranalegalcontabil.com.br",
+            "image": "parana-legal-contabil.svg",
+            "membershipLevel": 1,
+            "otherInformation": {
+                "industry": "Professional Services",
+                "shortDescription": "Accounting, tax planning, and small business legal support.",
+                "businessHours": "Mon-Fri 09:00-17:30"
+            }
+        },
+        {
+            "name": "Studio Araucária Fitness",
+            "address": "Rua Padre Anchieta 2100, Bigorrilho, Curitiba, PR, 80730-000, Brazil",
+            "phone": "+55 (41) 99801-7771",
+            "website": "https://www.studioaraucariafitness.com.br",
+            "image": "studio-araucaria-fitness.svg",
+            "membershipLevel": 2,
+            "otherInformation": {
+                "industry": "Fitness & Wellness",
+                "shortDescription": "Small-group training, functional fitness, and nutrition coaching.",
+                "businessHours": "Mon-Fri 06:00-21:00, Sat 08:00-13:00"
+            }
+        }
+    ]
+}
