@@ -1,3 +1,5 @@
+import { setDates } from "./bases.js";
+
 const gridButton = document.getElementById("grid");
 const listButton = document.getElementById("list");
 const cardsContainer = document.getElementById("cardsContainer");
@@ -86,3 +88,5 @@ if (gridButton && listButton && cardsContainer) {
     listButton.addEventListener("click", () => setActiveView("list"));
     fetchBusinesses();
 }
+
+setDates();

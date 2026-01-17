@@ -280,8 +280,10 @@ footer p {
     flex-direction: column;
     gap: 2rem;
     padding: 1rem;
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
+    border: 1px solid var(--stroke);
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .directory-header-btns {
@@ -320,14 +322,6 @@ footer p {
 
 .directory-header-btns button:active {
     transform: scale(0.98);
-}
-
-.directory-container {
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 1rem;
-    border: 1px solid var(--stroke);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .view-buttons-content {
@@ -424,7 +418,7 @@ footer p {
     border: 1px solid var(--stroke);
 }
 
-.card-body {
+.business-card .card-body {
     display: grid;
     gap: 0.35rem;
 }
@@ -451,7 +445,7 @@ footer p {
     text-decoration: underline;
 }
 
-.card-footer {
+.business-card .card-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
