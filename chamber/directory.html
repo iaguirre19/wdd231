@@ -29,9 +29,9 @@
             href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/chamber/styles/normalize.css" />
-        <link rel="stylesheet" href="/chamber/styles/small.css" />
-        <link rel="stylesheet" href="/chamber/styles/larger.css" />
+        <link rel="stylesheet" href="./styles/normalize.css" />
+        <link rel="stylesheet" href="./styles/small.css" />
+        <link rel="stylesheet" href="./styles/larger.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -39,11 +39,11 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="icon" type="image/png" href="/chamber/images/favicon.png" />
+        <link rel="icon" type="image/png" href="./images/favicon.png" />
         <title>Directory | Curitiba Chamber</title>
         <script
             type="module"
-            src="/chamber/scripts/directory.js"
+            src="./scripts/directory.js"
             defer
         ></script>
     </head>
@@ -52,18 +52,24 @@
             <div class="header-inner">
                 <div class="brand">
                     <img
-                        src="/chamber/images/chamber-logo.png"
+                        src="./images/chamber-logo.png"
                         alt="Curitiba Chamber logo"
                     />
                     <span>Curitiba Chamber of Commerce</span>
                 </div>
                 <nav id="siteNav" class="site-nav" aria-label="Main navigation">
                     <ul>
-                        <li><a href="/chamber/index.html">Home</a></li>
-                        <li><a href="/chamber/discover.html">Discover</a></li>
-                        <li><a href="/chamber/directory.html" aria-current="page">Directory</a></li>
-                        <li><a href="/chamber/join.html">Join</a></li>
-                        <li><a href="/chamber/contact.html">Contact</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./discover.html">Discover</a></li>
+                        <li>
+                            <a
+                                href="./directory.html"
+                                aria-current="page"
+                                >Directory</a
+                            >
+                        </li>
+                        <li><a href="./join.html">Join</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -73,7 +79,7 @@
             <section>
                 <figure>
                     <img
-                        src="/chamber/images/curitiba-banner.webp"
+                        src="./images/curitiba-banner.webp"
                         alt="Curitiba city skyline at night"
                     />
                 </figure>
@@ -154,7 +160,10 @@
 
         <footer>
             <div class="footer-contact">
-                <p><strong>Contact:</strong> info@camaracuritiba.br | +55 (41) 3021-7788</p>
+                <p>
+                    <strong>Contact:</strong> info@camaracuritiba.br | +55 (41)
+                    3021-7788
+                </p>
                 <p>Rua Marechal Deodoro 630, Curitiba, PR</p>
             </div>
             <div class="footer-meta">
@@ -164,7 +173,7 @@
             </div>
         </footer>
         <script type="module">
-            import { setDates } from "/chamber/scripts/bases.js";
+            import { setDates } from "./scripts/bases.js";
             setDates();
         </script>
     </body>

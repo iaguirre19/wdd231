@@ -72,7 +72,7 @@ function renderBusinesses() {
 
 async function fetchBusinesses() {
     try {
-        const response = await fetch("/chamber/data/members.json");
+        const response = await fetch("./data/members.json");
         const data = await response.json();
         businessesCache = data.businesses || [];
         setActiveView(currentView);
