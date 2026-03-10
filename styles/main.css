@@ -203,6 +203,21 @@ p {
     border-radius: 8px;
 }
 
+.photo-card figure {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.photo-card img {
+    width: min(100%, 320px);
+}
+
+.photo-card figcaption {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
 @media (min-width: 900px) {
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
