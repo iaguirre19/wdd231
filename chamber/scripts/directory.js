@@ -29,13 +29,33 @@ function buildCard(business, index) {
     card.className = `business-card ${currentView === "list" ? "is-list" : ""}`;
 
     const membershipLevel = membershipNames[business.membershipLevel] || "Member";
+    const membershipClass =
+        membershipLevel === "Gold"
+            ? "is-gold"
+            : membershipLevel === "Silver"
+              ? "is-silver"
+              : membershipLevel === "Bronze"
+                ? "is-bronze"
+                : "is-member";
 
     card.innerHTML = `
         <div class="card-top">
-            <h3>${business.name}</h3>
-            <span class="membership-pill">${membershipLevel}</span>
+            <div class="title-block">
+                <img
+                    class="business-logo"
+                    src="./images/${business.image}"
+                    alt="${business.name} logo"
+                    loading="lazy"
+                    width="48"
+                    height="48"
+                />
+                <div>
+                    <h3>${business.name}</h3>
+                    <span class="industry-chip">${business?.otherInformation?.industry || "Member business"}</span>
+                </div>
+            </div>
+            <span class="membership-pill ${membershipClass}">${membershipLevel}</span>
         </div>
-        <p class="industry">${business?.otherInformation?.industry || "Member business"}</p>
         <div class="card-body">
             <p class="info-line">
                 <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
